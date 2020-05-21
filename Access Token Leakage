@@ -1,0 +1,13 @@
+Steps to Reproduce:
+1 Click on register
+2 Fill the required details
+3 Click on join after filling all details
+4 Capture the request in the burp
+4 Send it to repeater
+6 Click on go now
+7-You can see the access code in the response body
+
+Impact:
+Attacker can create a account with the victim mail id and he can confirm the mail id without the confirmation link.
+
+Note-Use a different browser for recieving the confirmation link. This will help to serach the access token in burp.
