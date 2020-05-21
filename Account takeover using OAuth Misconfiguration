@@ -1,0 +1,13 @@
+Account takeover using OAuth Misconfiguration
+
+About Oauth
+
+OAuth is an open standard for access delegation,commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords.This mechanism is used by companies such as Google, Facebook, Microsoft and Twitter to permit the users to share information about their accounts with third party applications or websites.
+
+1-Log in to the application via the login page
+2-After successful registration you will be redirected to profile page where you need to fill some more details
+3-In the account section you have option to link your Facebook, LinkedIn account
+4-When you click on link Facebook you will be redirected to Facebook.com and you need to click on authorize this app
+5-Click on authorize and intercept the request
+6-As you can see the POST request has a CSRF token this can be omitted by changing this POST request to GET request
+7-And send this to victim as soon as the victim visits the link his/her account will be linked to your Facebook account and you can access that with login with Facebook option
