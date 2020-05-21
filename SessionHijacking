@@ -1,0 +1,11 @@
+Session Expiration Issues(Session Hijacking)
+Cookies are used to maintain session of the particular user and they should expire once the user logs out of his account.In secure web application,Cookies immediately expire once the user logs out of his account.But this is not happening in the case of XYZ,same cookies can be used again and again to open the session of the victim.
+
+STEPS TO FIND OUT THIS VULNERABILITY:
+
+1)download a cookie extension for chrome called cookie editor(add to chrome)
+2)login in any site which you want to test
+3)copy the cookie 
+4)logout
+5)paste the cookie and reload the session 
+6)if you logged in then it is vulnerable or vice versa
